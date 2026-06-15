@@ -98,13 +98,6 @@ router.post('/login', async (req, res) => {
       res.status(500).json({ message: 'Server error' });
     }
   });
-
-  // 15-06-2026 start
-router.get("/", (req, res) => {
-  res.json({
-    message: "Backend API is running successfully"
-  });
-});
-// 15-06-2026 end
+ 
 
 module.exports = router;
