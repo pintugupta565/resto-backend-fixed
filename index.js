@@ -36,7 +36,13 @@ app.use('/api/orderdetails', orderdetails)
 
 // DeliveryPartner
 app.use('/api/deliveryPartner/authDeliveryPartner', authDeliveryPartner)
-
+// 15-06-2026 start
+app.get("/", (req, res) => {
+  res.json({
+    message: "Backend API is running successfully"
+  });
+});
+// 15-06-2026 end
 // Local development server
 if (require.main === module) {
   app.listen(5000, () => console.log('Server running on port 5000'));
