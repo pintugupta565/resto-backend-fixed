@@ -99,4 +99,12 @@ router.post('/login', async (req, res) => {
     }
   });
 
+  // 15-06-2026 start
+app.get("/", (req, res) => {
+  res.json({
+    message: "Backend API is running successfully"
+  });
+});
+// 15-06-2026 end
+
 module.exports = router;
