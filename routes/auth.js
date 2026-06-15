@@ -100,7 +100,7 @@ router.post('/login', async (req, res) => {
   });
 
   // 15-06-2026 start
-app.get("/", (req, res) => {
+router.get("/", (req, res) => {
   res.json({
     message: "Backend API is running successfully"
   });
